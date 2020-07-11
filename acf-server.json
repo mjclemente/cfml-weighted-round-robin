@@ -1,0 +1,7 @@
+{
+    "app":{
+        "cfengine":"adobe@2018"
+    },
+    "cfconfigfile":"./tests/resources/.cfconfig.json",
+    "openbrowser":false
+}

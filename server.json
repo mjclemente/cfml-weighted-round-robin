@@ -1,0 +1,4 @@
+{
+    "cfconfigfile":"./tests/resources/.cfconfig.json",
+    "openbrowser":false
+}

@@ -1,0 +1,175 @@
+{
+	"adminSalt": "E57F1902-2B12-4D4D-A816612C57ED5ADC",
+	"applicationListener": "mixed",
+	"applicationMode": "curr2root",
+	"applicationTimeout": "1,0,0,0",
+	"caches": {
+		"test": {
+			"class": "lucee.runtime.cache.ram.RamCache",
+			"custom": {
+				"timeToIdleSeconds": "86400",
+				"timeToLiveSeconds": "86400"
+			},
+			"readOnly": "false",
+			"storage": "false",
+			"type": "RAM"
+		}
+	},
+	"clientCookies": "yes",
+	"clientManagement": "no",
+	"clientTimeout": "90,0,0,0",
+	"datasourcePreserveSingleQuotes": "false",
+	"debuggingEnabled": "no",
+	"hspw": "475d6f9961aedcf42fb80e8bd2dc0470134b30f767300c0d8a93f6c4a171bc4a",
+	"loggers": {
+		"application": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/application.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"datasource": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/datasource.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"deploy": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/deploy.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"exception": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/exception.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"gateway": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/gateway.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"mail": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/mail.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"mapping": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/mapping.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"memory": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/memory.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"orm": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/orm.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"remoteclient": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/remoteclient.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"requesttimeout": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/requesttimeout.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"rest": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/rest.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"scheduler": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/scheduler.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"scope": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/scope.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"search": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/search.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"thread": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/thread.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		},
+		"trace": {
+			"appender": "resource",
+			"appenderArguments": {
+				"path": "{lucee-config}/logs/trace.log"
+			},
+			"layout": "classic",
+			"level": "error"
+		}
+	},
+	"mailConnectionTimeout": "30",
+	"mailSpoolEnable": "yes",
+	"mergeURLAndForm": "no",
+	"requestTimeout": "0,0,0,50",
+	"requestTimeoutEnabled": true,
+	"scopeCascading": "standard",
+	"searchResultsets": "yes",
+	"sessionManagement": "yes",
+	"sessionTimeout": "0,0,30,0",
+	"systemErr": "system",
+	"systemOut": "system",
+	"timeServer": "pool.ntp.org",
+	"updateSiteURL": "http://update.lucee.org"
+}
