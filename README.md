@@ -3,6 +3,38 @@ This module provides a round-robin algorithm for rotating elements according to 
 
 ## Usage
 
+```cfc
+rr = new path.to.weightedroundrobin.RoundRobin();
+
+rr.add(
+  {
+    "id": "heavy",
+    "weight": 6
+  }
+);
+
+rr.add(
+  {
+    "id": "light",
+    "weight": 3
+  }
+);
+
+rr.add(
+  {
+    "id": "feather",
+    "weight": 1
+  }
+);
+
+// you can add as many as needed
+
+for ( i = 0; i < 10; i++ ) {
+  writeOutput( rr.get().id & '<br>' );
+}
+// heavy, light, heavy, heavy, light, heavy, feather, heavy, heavy, light
+```
+
 ## Reference Manual
 
 |    Method    |                    Parameters                     |                              Description                               |
