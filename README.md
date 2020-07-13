@@ -61,9 +61,11 @@ When using this approach, you don't necessarily need to store the RoundRobin com
 When the component is init with a `cacheId` and `cacheRegion`, the data will be stored in the specified cache, using the provided cacheId, instead of in the component memory, which is the default.
 
 #### `add( required struct element, boolean overwrite = true )`
-Adds an element to the round-robin rotation. Returns the element's key. 
+Adds an element to the round-robin rotation. Returns the element's key.
 
 The `element` is a struct, with at minimum an `id` key, but if you're using this module, you'll likely also want a `weight` key. The default `weight` is 1, which will be used if no weight is provided.
+
+By default, if you try to `add()` an element that already exists, it is ignored. If you want to overwrite the existing element, set the `overwrite` parameter to `true`.
 
 #### `get()`
 Returns the next element in the round-robin rotation. The full struct is returned.
