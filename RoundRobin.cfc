@@ -98,7 +98,7 @@ component output="false" {
   }
 
   private struct function _reset( required struct element ) {
-    element[ 'weight' ] = element?.weight ?: 10;
+    element[ 'weight' ] = element?.weight ?: 1;
     element[ 'currentWeight' ] = element.weight;
     element.effectiveWeight = element.weight;
 
