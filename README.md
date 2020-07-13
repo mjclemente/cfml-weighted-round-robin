@@ -40,7 +40,7 @@ for ( i = 0; i < 10; i++ ) {
 ```
 
 ### Using Memory or a Cache
-The default procedure for this module is to store the round-robin rotation in memory. You don't need to pass any arguments in when you `init` the component, and you should store it as a singleton (or in the application scope).
+By default this component stores the round-robin rotation in memory; it is `init` without any arguments and you should store it as a singleton (or in the application scope).
 
 However, when you're deploying a distributed application (like Docker Swarm), or if you'd like more robust data persistence, you can configure the module to store/track the rotating elements in a remote cache (like Redis). *Note that remote caching engines are only available in Lucee or Adobe ColdFusion 2018*. 
 
